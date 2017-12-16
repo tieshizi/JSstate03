@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  //  1.将1~100以内所有的数都放到数组里
+    var arr=[];
+    for(var i =1;i<=100;i++){
+      arr[arr.length]=i;
+      // arr.push(i);
+    }
+    console.log(arr)
+  //  2.将1~100以内所有的奇数放到数组里。
+    var arr=[];
+    for(var i =1;i<=100;i++){
+      if(i%2!=0){
+      arr[arr.length]=i;
+      // arr.push(i);
+      }     
+    }
+    console.log(arr)
+
+  //  3.将1~100以内不能被3整除的数放到数组里。
+     var arr=[];
+    for(var i =1;i<=100;i++){
+      if(i%3!=0){
+      arr[arr.length]=i;
+      // arr.push(i);
+      }     
+    }
+    console.log(arr)
+  </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    var arr=[50,20,70,40,10,60,30]
+
+   for(var i=0;i<arr.length;i++){
+    console.log("数组第"+i+"个元素是"+arr[i])
+   }
+
+  // 1.求数组中所有数据之和以及平均数。
+     var a=0;
+     var b=0;
+     for(var i=0;i<arr.length;i++){
+      a+=arr[i];
+      b=a/(i+1);
+    }
+     console.log("总和是"+a+"平均数是"+b)
+
+  //  2.求数组里的最大最小值以及它们所在的位置。
+      var max=arr[0];
+      var maxindex=0;
+      var min=arr[0];
+      var minindex=0;
+    for(var i=0;i<arr.length;i++){
+    if(arr[i]>max){
+      max=arr[i]
+      maxindex=i;
+    }
+    if(arr[i]<min){
+      min=arr[i]
+      minindex=i;
+    }
+    }
+     console.log("最大值是"+max+",最大值下标是"+maxindex+"最小值是"+min+",最小值下标是"+minindex)
+
+  //  3.将数组用|或其它符号分割
+
+   var str="";
+
+   for(var i=0;i<arr.length;i++){
+    str+=arr[i]+"|";
+   }
+    console.log(str);
+
+  //  4.有一个字符串数组，求字符串数组中每项的长度，并把长度存入到一个新的数组里。
+  var arr = ["abc", "def", "Hello", "Hi", "World"];
+  var arr1=[];
+  for(var i=0;i<arr.length;i++){
+    // arr1.push(arr[i].length)
+    arr1[arr1.length]=arr[i].length;
+   }
+    console.log(arr1);
+
+
+  //  5.将不为0的值存入一个新的数组
+  arr = [2, 4, 5, 0, 3, 7, 0, 1, 0, 5, 0];
+  newarr=[];
+  for(var i=0;i<arr.length;i++){
+    if(arr[i]!=0){
+      // newarr.push(arr[i]);
+      newarr[newarr.length]=arr[i];
+    }
+   }
+    console.log(newarr);
+
+
+
+
+  //  6.让一个数组倒序保存到另一个数组里
+   arr = [2, 4, 5, 0, 3, 7, 0, 1, 0, 5, 0];
+    newarr=[];
+   for(var i=arr.length-1;i>=0;i--){
+      newarr.push(arr[i])
+      // newarr[newarr.length]=arr[i];   
+   }
+    console.log(newarr);
+
+
+
+  </script>
+</body>
+</html>
